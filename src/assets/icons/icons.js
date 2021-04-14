@@ -21,7 +21,8 @@ import {
   cibStripe,
   cibPaypal,
   cibGooglePay, 
-  cibCcAmex
+  cibCcAmex,
+  cibMinetest
 } from '@coreui/icons'
 import {
   cifUs,
@@ -32,7 +33,7 @@ import {
   cifPl
 } from '@coreui/icons'
 import {
-  cilArrowRight,
+  cilArrowRight, cilStream,
   cilBan,
   cilBasket,
   cilBell,
@@ -76,15 +77,17 @@ import {
   cilUser,
   cilUserFemale,
   cilUserFollow,
-  cilXCircle
+  cilXCircle,
+  cilHouse
 
 } from '@coreui/icons'
 import { logo } from './logo'
-
+import Logo from './Logo.png'
 export const iconsSet = Object.assign(
   {},
   { logo },
-  {
+  {Logo},
+  { cilHouse, cilStream,
     cilArrowRight,
     cilBan,
     cilBasket,
@@ -162,6 +165,7 @@ export const iconsSet = Object.assign(
     cibStripe, 
     cibPaypal, 
     cibGooglePay,
-    cibCcAmex
+    cibCcAmex,
+    cibMinetest
   }
 )

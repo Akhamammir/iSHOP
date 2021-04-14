@@ -6,13 +6,9 @@ export default [
         _name: 'CSidebarNavItem',
         name: 'Dashboard',
         to: '/dashboard',
-        icon: 'cil-speedometer',
-        badge: {
-          color: 'primary',
-          text: 'NEW'
-        }
+        icon: 'cil-house',
       },
-      {
+     /* {
         _name: 'CSidebarNavTitle',
         _children: ['Theme']
       },
@@ -24,19 +20,25 @@ export default [
       },
       {
         _name: 'CSidebarNavItem',
-        name: 'Typography',
+        name: 'Administracion',
+        to: '/theme/colors',
+        icon: 'cil-calendar'
+      },
+      {
+        _name: 'CSidebarNavItem',
+        name: 'POS',
         to: '/theme/typography',
-        icon: 'cil-pencil'
+        icon: 'cib-minetest'
       },
       {
         _name: 'CSidebarNavTitle',
         _children: ['Components']
-      },
+      },*/
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Base',
+        name: 'Administracion',
         route: '/base',
-        icon: 'cil-puzzle',
+        icon: 'cil-calendar',
         items: [
           {
             name: 'Breadcrumbs',
@@ -106,9 +108,9 @@ export default [
       },
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Buttons',
+        name: 'POS',
         route: '/buttons',
-        icon: 'cil-cursor',
+        icon: 'cib-minetest',
         items: [
           {
             name: 'Buttons',
@@ -125,18 +127,22 @@ export default [
           {
             name: 'Brand Buttons',
             to: '/buttons/brand-buttons'
+          },
+          {
+            name: 'Charts',
+            to: '/charts',
           }
         ]
-      },
+      },/*
       {
         _name: 'CSidebarNavItem',
         name: 'Charts',
         to: '/charts',
         icon: 'cil-chart-pie'
-      },
+      },*/
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Icons',
+        name: 'Correo Entrante',
         route: '/icons',
         icon: 'cil-star',
         items: [
@@ -160,7 +166,7 @@ export default [
       },
       {
         _name: 'CSidebarNavDropdown',
-        name: 'Notifications',
+        name: 'Correo Saliente',
         route: '/notifications',
         icon: 'cil-bell',
         items: [
@@ -180,7 +186,7 @@ export default [
       },
       {
         _name: 'CSidebarNavItem',
-        name: 'Widgets',
+        name: 'Paquetes',
         to: '/widgets',
         icon: 'cil-calculator',
         badge: {
@@ -221,7 +227,7 @@ export default [
           }
         ]
       },
-      {
+     /* {
         _name: 'CSidebarNavItem',
         name: 'Download CoreUI',
         href: 'http://coreui.io/vue/',
@@ -236,7 +242,7 @@ export default [
         icon: { name: 'cil-layers', class: 'text-white' },
         _class: 'bg-danger text-white',
         target: '_blank'
-      }
+      }*/
     ]
   }
 ]

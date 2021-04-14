@@ -1,1 +1,16 @@
 // Here you can add other styles
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.c-sidebar{
+    background: #2130B8;
+}
+.CenterIcon{
+    position: relative;
+    top:15%;
+    margin-left: 15px;
+}
+.c-header .c-header-nav .c-header-nav-link, .c-header .c-header-nav .c-header-nav-btn{
+    color: #212223;
+    font-size: 1.275rem;
+    font-weight:800 !important;
+    font-family: 'Poppins', sans-serif;
+}

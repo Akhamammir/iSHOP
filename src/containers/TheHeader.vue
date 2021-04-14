@@ -1,6 +1,6 @@
 <template>
   <CHeader fixed with-subheader light>
-    <CToggler
+   <CToggler
       in-header
       class="ml-3 d-lg-none"
       @click="$store.commit('toggleSidebarMobile')"
@@ -10,11 +10,12 @@
       class="ml-3 d-md-down-none"
       @click="$store.commit('toggleSidebarDesktop')"
     />
+    <CIcon name="cil-stream" size="xl"  class="CenterIcon"/>
     <CHeaderBrand class="mx-auto d-lg-none" to="/">
-      <CIcon name="logo" height="48" alt="Logo"/>
+      <CImg  src="./../assets/icons/Logo.png" height="48" alt="Logo"/>
     </CHeaderBrand>
     <CHeaderNav class="d-md-down-none mr-auto">
-      <CHeaderNavItem class="px-3">
+      <CHeaderNavItem class="px-3 HeavyLetter">
         <CHeaderNavLink to="/dashboard">
           Dashboard
         </CHeaderNavLink>
@@ -56,7 +57,7 @@
 
 <script>
 import TheHeaderDropdownAccnt from './TheHeaderDropdownAccnt'
-
+import image from "./../assets/icons/Logo.png"
 export default {
   name: 'TheHeader',
   components: {
